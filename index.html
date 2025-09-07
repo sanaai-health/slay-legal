@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slay AI - Support & Help</title>
+    <meta name="description" content="Get support for Slay AI - the brutally honest life coach app that roasts you into achieving your goals. Technical help, billing support, and app guidance.">
+    <meta name="keywords" content="Slay AI, life coach, goal tracking, brutal motivation, support, help, accountability app, productivity">
+    <meta name="author" content="Slay AI">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Slay AI - Support & Help">
+    <meta property="og:description" content="The brutally honest AI coach that roasts you into success. Get help with goal tracking, habits, and motivation.">
+    <meta property="og:url" content="https://slayai.app/support">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif;
+            background: #0A0A0A;
+            color: #FFFFFF;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #FF3B30 0%, #FF6B60 100%);
+            border-radius: 16px;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .section {
+            background: #1A1A1A;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid #333333;
+        }
+        
+        .section h2 {
+            color: #FF3B30;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h3 {
+            color: #FFFFFF;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
+            border-left: 4px solid #FF3B30;
+            padding-left: 15px;
+        }
+        
+        .support-button {
+            background: linear-gradient(135deg, #FF3B30 0%, #FF6B60 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 15px 10px 0;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .support-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 59, 48, 0.3);
+        }
+        
+        .email-button {
+            background: linear-gradient(135deg, #2A2A2A 0%, #404040 100%);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 15px 10px 0;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 1px solid #FF3B30;
+        }
+        
+        .email-button:hover {
+            background: #FF3B30;
+            transform: translateY(-2px);
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #1F1F1F 0%, #2A2A2A 100%);
+            padding: 30px;
+            border-radius: 16px;
+            margin: 30px 0;
+            border: 2px solid #FF3B30;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background: #2A2A2A;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #FF3B30;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #B0B0B0;
+        }
+        
+        li:before {
+            content: "🔥";
+            position: absolute;
+            left: 0;
+        }
+        
+        .brutal-disclaimer {
+            background: linear-gradient(135deg, #1A1A1A 0%, #2A1A1A 100%);
+            border: 2px solid #FF3B30;
+            border-radius: 16px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .brutal-disclaimer h3 {
+            color: #FF3B30;
+            border: none;
+            padding: 0;
+            margin-bottom: 15px;
+        }
+        
+        a {
+            color: #FF6B60;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #FF3B30;
+            text-decoration: underline;
+        }
+        
+        .emoji {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #666666;
+            border-top: 1px solid #333333;
+            margin-top: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 20px;
+            }
+            
+            .support-button, .email-button {
+                width: 100%;
+                text-align: center;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔥 Slay AI Support</h1>
+            <p class="tagline">The brutally honest life coach that roasts you into success</p>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">💀</span>Get Help (No Excuses)</h2>
+            <p>Having issues with your brutal life coach? Need help crushing your goals? We're here to fix whatever's broken (including your excuses).</p>
+            
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK1_lniXYwuHmlsRZPPxkU0p86II4Hi7jMUeyNmXTbPsnucA/viewform?usp=dialog" class="support-button">Submit Support Request</a>
+            <a href="mailto:help.sanaai@gmail.com" class="email-button">Email Us Directly</a>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🚀</span>Common Issues & Solutions</h2>
+            
+            <h3>App Not Loading / Crashing</h3>
+            <ul>
+                <li>Force close and restart the Slay app</li>
+                <li>Check for app updates in the App Store</li>
+                <li>Restart your device (the classic solution that actually works)</li>
+                <li>Ensure you have iOS 14.0 or later</li>
+            </ul>
+            
+            <h3>AI Coach Not Responding</h3>
+            <ul>
+                <li>Check your internet connection (even AI needs WiFi)</li>
+                <li>Verify you haven't hit your monthly roast limit</li>
+                <li>Try refreshing the chat or restarting the app</li>
+                <li>If you're premium, make sure your subscription is active</li>
+            </ul>
+            
+            <h3>Goals & Habit Tracking Issues</h3>
+            <ul>
+                <li>Sync issues? Pull down to refresh your goal list</li>
+                <li>Missing data? Check if you're logged into the same account</li>
+                <li>Photos not uploading? Ensure camera permissions are enabled</li>
+                <li>Progress not saving? Force close and reopen the app</li>
+            </ul>
+            
+            <h3>Subscription & Premium Features</h3>
+            <ul>
+                <li>Subscriptions are managed through the App Store</li>
+                <li>Not seeing premium features? Restore purchases in app settings</li>
+                <li>Billing questions? Contact Apple Support directly</li>
+                <li>Account issues? Email us with your purchase details</li>
+            </ul>
+            
+            <h3>Notification Problems</h3>
+            <ul>
+                <li>Enable notifications in iOS Settings > Notifications > Slay</li>
+                <li>Check if "Do Not Disturb" is blocking your reality checks</li>
+                <li>Our morning roasts need permission to wake you up</li>
+                <li>Evening summaries require notification access</li>
+            </ul>
+        </div>
+        
+        <div class="brutal-disclaimer">
+            <h3>⚠️ Reality Check Disclaimer</h3>
+            <p>Slay AI is designed to be brutally honest and use tough love to motivate you. If you're looking for gentle encouragement and participation trophies, this isn't your app. Our AI coach tells the truth about your progress (or lack thereof) to help you actually achieve your goals.</p>
+            <br>
+            <p><strong>Not Medical Advice:</strong> Slay is for motivational purposes only. We roast your goals, not diagnose your health. Always consult healthcare professionals for medical advice.</p>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🎯</span>App Features Help</h2>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Goal Tracking</h3>
+                    <p>Set specific, measurable goals and upload progress photos for AI analysis and roasting.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Habit Building</h3>
+                    <p>Create daily habits linked to your goals. Track consistency and get called out for missed days.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>AI Roasting</h3>
+                    <p>Get brutally honest feedback on your progress. Choose your brutality level (1-10) based on how much truth you can handle.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Progress Analytics</h3>
+                    <p>See detailed insights into your behavioral patterns, procrastination habits, and success metrics.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-section">
+            <h2><span class="emoji">📧</span>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:help.sanaai@gmail.com">help.sanaai@gmail.com</a></p>
+            <p><strong>Support Form:</strong> <a href="https://docs.google.com/forms/d/e/1FAIpQLSeK1_lniXYwuHmlsRZPPxkU0p86II4Hi7jMUeyNmXTbPsnucA/viewform?usp=dialog">Submit a detailed request</a></p>
+            <p><strong>Response Time:</strong> 24-48 hours (we respond faster than you complete your goals)</p>
+            <br>
+            <p>For urgent issues, use the support form. For general questions or feature requests, email works great. Either way, we'll help you get back to slaying your goals.</p>
+        </div>
+        
+        <div class="section">
+            <h2><span class="emoji">🔒</span>Privacy & Data</h2>
+            <ul>
+                <li>Your goal data is stored securely and encrypted</li>
+                <li>Photos and progress updates are processed privately</li>
+                <li>We don't sell your data (we're not that kind of brutal)</li>
+                <li>AI conversations are processed securely through Google Gemini</li>
+                <li>You can delete your account and data anytime</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p><strong>Slay AI</strong> - Version 1.0.3<br>
+            Last Updated: September 2025<br>
+            <em>"Slay your excuses. Slay your goals."</em></p>
+        </div>
+    </div>
+</body>
+</html>
